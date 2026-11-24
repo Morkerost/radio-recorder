@@ -12,7 +12,7 @@ mod tests;
 
 use serde::{Deserialize, Serialize};
 use std::error::Error;
-use std::fs::{self, File, OpenOptions};
+use std::fs::{self, OpenOptions};
 use std::io::{self, BufWriter, IsTerminal, Write};
 use std::panic::{self, AssertUnwindSafe};
 use std::path::{Path, PathBuf};
