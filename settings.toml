@@ -1,0 +1,19 @@
+language = "en"
+audio_format = "wav"
+mp3_bitrate_kbps = 128
+
+# Leave empty to use the Windows default input device.
+# Run radio-recorder.exe --list-devices to see available input devices.
+input_device = ""
+
+# Recordings are placed in numbered day folders under this directory.
+output_directory = "recordings"
+
+# Start files on local clock boundaries (:00, :10, :20...).
+segment_minutes = 10
+
+# Delete WAV and MP3 recordings older than this many hours in numbered day folders.
+retention_hours = 1000
+
+# Rust chrono time format, without the extension. Day folders prevent daily collisions.
+filename_format = "%H_%M_%S"
